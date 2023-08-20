@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "build": "wrangler deploy --dry-run --outdir=dist",
-    "deploy": "wrangler deploy --env=prod",
+    "deploy": "wrangler deploy",
     "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

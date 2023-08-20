@@ -1,4 +1,4 @@
-name = "vscode-releases-worker"
+name = "vscode-releases"
 main = "src/index.ts"
 compatibility_date = "2023-08-20"
 
