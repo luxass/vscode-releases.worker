@@ -1,0 +1,25 @@
+{
+  "name": "vscode-releases.worker",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run --outdir=dist",
+    "deploy": "wrangler deploy --env=prod",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@octokit/core": "^5.0.0",
+    "@octokit/plugin-paginate-rest": "^8.0.0",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230814.0",
+    "@luxass/eslint-config": "^3.3.1",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.2",
+    "wrangler": "^3.5.1"
+  }
+}
